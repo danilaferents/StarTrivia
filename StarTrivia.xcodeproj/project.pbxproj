@@ -12,6 +12,8 @@
 		83A960052246CAB5009EC2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A960032246CAB5009EC2C5 /* Main.storyboard */; };
 		83A960072246CAB6009EC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A960062246CAB6009EC2C5 /* Assets.xcassets */; };
 		83A9600A2246CAB6009EC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A960082246CAB6009EC2C5 /* LaunchScreen.storyboard */; };
+		83A960202246E92F009EC2C5 /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9601F2246E92F009EC2C5 /* BlackBgView.swift */; };
+		83A960232246EB7A009EC2C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A960222246EB7A009EC2C5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		83A960182246DD56009EC2C5 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		83A960192246DD56009EC2C5 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		83A9601A2246DD56009EC2C5 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		83A9601F2246E92F009EC2C5 /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
+		83A960222246EB7A009EC2C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				83A9601D2246DDA5009EC2C5 /* View */,
 				83A95FFF2246CAB5009EC2C5 /* AppDelegate.swift */,
 				83A960012246CAB5009EC2C5 /* SelectPersonVC.swift */,
+				83A960212246EB67009EC2C5 /* Utils */,
 				83A9601B2246DD6E009EC2C5 /* Resources */,
 				83A960032246CAB5009EC2C5 /* Main.storyboard */,
 				83A960062246CAB6009EC2C5 /* Assets.xcassets */,
@@ -99,6 +104,7 @@
 		83A9601D2246DDA5009EC2C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83A9601F2246E92F009EC2C5 /* BlackBgView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +114,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		83A960212246EB67009EC2C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				83A960222246EB7A009EC2C5 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +197,8 @@
 			files = (
 				83A960022246CAB5009EC2C5 /* SelectPersonVC.swift in Sources */,
 				83A960002246CAB5009EC2C5 /* AppDelegate.swift in Sources */,
+				83A960202246E92F009EC2C5 /* BlackBgView.swift in Sources */,
+				83A960232246EB7A009EC2C5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

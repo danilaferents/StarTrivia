@@ -10,9 +10,11 @@ import UIKit
 
 class SelectPersonVC: UIViewController {
 
+//    @IBOutlet weak var stackBg: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        stackBg.layer.cornerRadius = 10
+        
     }
 
 

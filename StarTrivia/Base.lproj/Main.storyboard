@@ -35,7 +35,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxb-i8-EXD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxb-i8-EXD" customClass="BlackBgView" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="320.5" width="374" height="255"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BcQ-VB-5M7">
@@ -174,10 +174,22 @@
                                     <constraint firstAttribute="trailing" secondItem="BcQ-VB-5M7" secondAttribute="trailing" constant="20" id="uQN-2w-07v"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7X-WH-asM" customClass="BlackBgButton" customModule="StarTrivia" customModuleProvider="target">
+                                <rect key="frame" x="102" y="782" width="210" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60054467430000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="vXT-dM-ZO9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="19"/>
+                                <state key="normal" title="$ Random #">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHS-MN-0L1" secondAttribute="trailing" constant="20" id="02b-3J-Fgj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T7X-WH-asM" secondAttribute="bottom" constant="20" id="0dL-3T-sSf"/>
                             <constraint firstItem="MHS-MN-0L1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3IO-iI-22d"/>
                             <constraint firstItem="Yjl-mZ-llL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6h9-Pa-9oQ"/>
                             <constraint firstAttribute="bottom" secondItem="Yjl-mZ-llL" secondAttribute="bottom" id="9dO-IZ-djN"/>
@@ -187,10 +199,14 @@
                             <constraint firstItem="Mxb-i8-EXD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SyN-85-VOQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mxb-i8-EXD" secondAttribute="trailing" constant="20" id="kEj-dT-AhQ"/>
                             <constraint firstItem="Mxb-i8-EXD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q0j-Pn-HfR"/>
+                            <constraint firstItem="T7X-WH-asM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vDb-5O-AaT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="l7g-1v-Cag"/>
+                    <connections>
+                        <outlet property="stackBg" destination="Mxb-i8-EXD" id="c4I-5d-adO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
