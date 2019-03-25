@@ -10,11 +10,20 @@ import UIKit
 
 class SelectPersonVC: UIViewController {
 
-//    @IBOutlet weak var stackBg: UIView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+    @IBOutlet weak var massLbl: UILabel!
+    @IBOutlet weak var hairLbl: UILabel!
+    @IBOutlet weak var birthYearLbl: UILabel!
+    @IBOutlet weak var genderLbl: UILabel!
+    
+    //    @IBOutlet weak var stackBg: UIView!
+    var personApi = PersonApi()
     override func viewDidLoad() {
         super.viewDidLoad()
 //        stackBg.layer.cornerRadius = 10
         
+        personApi.getRandomPersonUrlSession()
     }
 
 
