@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarTrivia/AppDelegate.swift"
-            timestampString = "575145969.104288"
+            timestampString = "575327478.1278321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -73,7 +73,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarTrivia/AppDelegate.swift"
-            timestampString = "575145969.104396"
+            timestampString = "575327478.1279531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -89,13 +89,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarTrivia/SelectPersonVC.swift"
-            timestampString = "575145969.104466"
+            timestampString = "575327478.128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "SelectPersonVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
