@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Person {
+struct Person :Codable {
     let name: String
     let height: String
     let mass: String
@@ -19,4 +19,17 @@ struct Person {
     let filmUrl: [String]
     let vehicleUrls: [String]
     let starshipUrls: [String]
+    
+    enum codingKeys: String, CodingKey {
+        case name
+        case height
+        case mass
+        case hair = "hair_color"
+        case birthYear = "bitrh_year"
+        case gender
+        case homeworldUrl = "homeworld"
+        case filmUrl = "films"
+        case vehicleUrls = "vehicles"
+        case starshipUrls = "starships"
+    }
 }
