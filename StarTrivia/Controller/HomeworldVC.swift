@@ -10,12 +10,28 @@ import UIKit
 
 class HomeworldVC: UIViewController, PersonProtocol {
     var person: Person!
+    let api = HomeWorldApi()
+    
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var climateLbl: UILabel!
+    @IBOutlet weak var terrainLbl: UILabel!
+    @IBOutlet weak var populationLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(person.name)
+        api.getHomeworld(url: person.homeworldUrl) { (homeWorld) in
+            if let homeworld = homeWorld{
+                self.setupUi(homeWorld: homeworld)
+            }
+        }
         // Do any additional setup after loading the view.
     }
-    
+    func setupUi(homeWorld: homeWorld){
+        nameLbl.text = homeWorld.name
+        climateLbl.text = homeWorld.climate
+        terrainLbl.text = homeWorld.terrain
+        populationLbl.text = homeWorld.population
+    }
 
     /*
     // MARK: - Navigation
