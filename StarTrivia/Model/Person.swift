@@ -20,12 +20,12 @@ struct Person :Codable {
     let vehicleUrls: [String]
     let starshipUrls: [String]
     
-    enum codingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case name
         case height
         case mass
         case hair = "hair_color"
-        case birthYear = "bitrh_year"
+        case birthYear = "birth_year"
         case gender
         case homeworldUrl = "homeworld"
         case filmUrl = "films"
