@@ -22,7 +22,9 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var starshipsBt: UIButton!
     @IBOutlet weak var filmsBt: UIButton!
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     //    @IBOutlet weak var stackBg: UIView!
+    
     var personApi = PersonApi()
     var person: Person!
     
@@ -32,7 +34,9 @@ class SelectPersonVC: UIViewController {
     }
     @IBAction func randomClicked(_ sender: Any) {
         let random = Int.random(in: 1...87)
+        spinner.startAnimating()
         personApi.getRandomPersonAlarmoCodable(id: random) { (person) in
+            self.spinner.stopAnimating()
             if let person = person{
                 self.setupView(person: person)
                 self.person = person

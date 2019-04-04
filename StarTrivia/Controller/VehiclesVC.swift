@@ -22,8 +22,12 @@ class VehiclesVC: UIViewController, PersonProtocol {
     @IBOutlet weak var costincreditsLbl: UILabel!
     @IBOutlet weak var lengthLbl: UILabel!
     @IBOutlet weak var maxspeedLbl: UILabel!
+    
     @IBOutlet weak var previousBt: UIButton!
     @IBOutlet weak var nextBt: UIButton!
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +39,9 @@ class VehiclesVC: UIViewController, PersonProtocol {
     }
     
     func getVehicle(url: String) {
+        spinner.startAnimating()
         api.getVehicles(url: url) { (vehicle) in
+            self.spinner.stopAnimating()
             if let vehicle = vehicle{
                 self.setupView(vehicle: vehicle)
             }
